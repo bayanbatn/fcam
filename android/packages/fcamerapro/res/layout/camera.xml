@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.nvidia.fcamerapro.CameraView
+		android:id="@+id/camera_view" android:layout_width="@dimen/camera_view_width"
+		android:layout_height="@dimen/camera_view_height"
+		android:layout_gravity="center" />
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_height="match_parent" android:layout_width="match_parent"
+		android:gravity="bottom">
+
+		<!-- FLAGS -->
+		<!-- <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+			android:stretchColumns="*"> <TableRow> <LinearLayout android:orientation="horizontal" 
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:layout_gravity="center_horizontal"> <ToggleButton android:text="ToggleButton" 
+			android:id="@+id/show_histogram" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			/> <TextView style="@style/elem_labels" android:text="Color Histogram" /> 
+			</LinearLayout> <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" android:layout_gravity="center_horizontal"> 
+			<ToggleButton android:text="ToggleButton" android:id="@+id/show_fps" android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" /> <TextView style="@style/elem_labels" 
+			android:text="Show FPS" /> </LinearLayout> </TableRow> </TableLayout> -->
+
+		<!-- WHITE BALANCE -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content">
+
+			<RelativeLayout android:layout_width="@dimen/bar_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_wb" />
+			</RelativeLayout>
+
+			<TextView android:id="@+id/tv_wb" style="@style/elem_values"
+				android:text="" />
+
+			<CheckBox android:id="@+id/cb_auto_wb" android:text="@string/label_auto"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginRight="@dimen/small_margin" />
+			<SeekBar android:id="@+id/sb_wb" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+
+		<!-- FOCUS -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/big_margin">
+
+			<RelativeLayout android:layout_width="@dimen/bar_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_focus" />
+			</RelativeLayout>
+
+			<TextView android:id="@+id/tv_focus" style="@style/elem_values"
+				android:text="" />
+
+			<CheckBox android:id="@+id/cb_auto_focus" android:text="@string/label_auto"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginRight="@dimen/small_margin" />
+			<SeekBar android:id="@+id/sb_focus" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+
+		<!-- EXPOSURE -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/big_margin">
+
+			<RelativeLayout android:layout_width="@dimen/bar_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_exposure" />
+			</RelativeLayout>
+
+			<TextView android:id="@+id/tv_exposure" style="@style/elem_values"
+				android:text="" />
+
+			<CheckBox android:id="@+id/cb_auto_exposure" android:text="@string/label_auto"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginRight="@dimen/small_margin" />
+			<SeekBar android:id="@+id/sb_exposure" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+
+		<!-- GAIN -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/big_margin">
+
+			<RelativeLayout android:layout_width="@dimen/bar_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_gain" />
+			</RelativeLayout>
+
+			<TextView android:id="@+id/tv_gain" style="@style/elem_values"
+				android:text="" />
+
+			<CheckBox android:id="@+id/cb_auto_gain" android:text="@string/label_auto"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center" android:layout_marginRight="@dimen/small_margin" />
+			<SeekBar android:id="@+id/sb_gain" android:layout_width="match_parent"
+				android:layout_height="wrap_content" android:layout_gravity="center"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+
+		<!-- IMAGE OUTPUT FORMAT -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/very_big_margin">
+
+			<RelativeLayout android:layout_width="@dimen/spinner_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_output_format" />
+			</RelativeLayout>
+
+			<Spinner android:id="@+id/spinner_output_format"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:prompt="@string/label_output_format"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+
+		<!-- FLASH MODE -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/small_margin">
+
+			<RelativeLayout android:layout_width="@dimen/spinner_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_flash_mode" />
+			</RelativeLayout>
+
+			<Spinner android:id="@+id/spinner_flash_mode"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:prompt="@string/label_flash_mode"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+
+		<!-- TOUCH MODE -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/small_margin">
+
+			<RelativeLayout android:layout_width="@dimen/spinner_elem_label_max_width"
+				android:layout_height="match_parent">
+				<TextView style="@style/elem_labels" android:text="@string/label_touch_action" />
+			</RelativeLayout>
+
+			<Spinner android:id="@+id/spinner_touch_action"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:prompt="@string/label_touch_action"
+				android:layout_marginRight="@dimen/big_margin" />
+		</LinearLayout>
+		
+		<!-- HISTOGRAM & CAPTURE BUTTON -->
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="match_parent" android:layout_height="match_parent"
+			android:layout_marginTop="@dimen/very_big_margin">
+			<com.nvidia.fcamerapro.HistogramView
+				android:id="@+id/histogram_view" android:layout_width="@dimen/camera_histogram_width"
+				android:layout_height="@dimen/camera_histogram_height"
+				android:layout_gravity="center" android:layout_marginLeft="@dimen/big_margin"
+				android:layout_marginRight="@dimen/big_margin" auto_refresh="true"
+				draw_coarse="true" />
+			<Button android:id="@+id/button_capture" android:text="@string/label_capture"
+				android:layout_marginRight="@dimen/big_margin" android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>
+
+
+
+
+

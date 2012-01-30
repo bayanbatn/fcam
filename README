@@ -1,0 +1,62 @@
+FCam Camera Control API for NVIDIA Tegra
+========================================
+
+Project home page:
+-----------------
+
+http://research.nvidia.com/content/tegra-prototype-instructions
+
+
+Description:
+------------
+
+FCam is a C++ camera control API, designed for easy, precise, and
+complete control of a camera platform.  It's based on the
+Frankencamera architecture, described in a paper available at
+http://graphics.stanford.edu/papers/fcam/, developed as part of the
+Camera 2.0 Project at the Stanford University Graphics Lab.
+
+This document refers to the implementation of FCam on the Tegra 3
+prototype tablet.
+
+
+Documentation:
+--------------
+
+FCam is documented using the Doxygen document generator system.  HTML
+documentation can be found in doc/html if it is prebuilt - otherwise,
+install doxygen, and run it in the FCam directory to build the
+documentation.
+
+
+Examples:
+---------
+
+The examples/ tree contains several sample programs that excercise the
+API in various ways.  Each example has a HOWTOBUILD file with build
+instructions.  The Tegra 3 prototype tablets run the Android OS.  It
+is recommended that you download the NVIDIA Tegra Development pack
+from
+        http://developer.nvidia.com/tegra-resources
+to get started. 
+
+
+Reporting bugs:
+--------------
+
+Report bugs and other issues to 
+        NVR-Tegra-Prototype-Support@nvidia.com
+
+
+Legal:
+-------
+
+Original FCam API is
+Copyright (c) 2010, Stanford University
+
+Tegra implementation is additionally 
+Copyright (c) 2011, NVIDIA Corporation
+
+This software package is licensed under the BSD License.
+
+See license.txt for detailed licensing information.

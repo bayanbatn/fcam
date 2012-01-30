@@ -1,0 +1,12 @@
+NVIDIA FCAM - Example 6
+
+Shutter sound. This example shows how to declare and attach a device,
+and write the appropriate actions. In this example, the camera will trigger 
+two actions at the beginning of the exposure: a flash, and a shutter sound.
+See SoundPlayer class for more information.
+
+License:
+camera_snd.mp3 was created by Mike Koenig and distributed under the 
+Attribution 3.0 license http://creativecommons.org/licenses/by/3.0/legalcode
+
+http://soundbible.com/563-Camera-Shutter-Click.html

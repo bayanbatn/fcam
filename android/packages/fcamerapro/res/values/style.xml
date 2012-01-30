@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- spacing config -->
+
+	<style name="elem_labels">
+		<item name="android:textSize">22dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginRight">7dp</item>
+		<item name="android:layout_marginLeft">7dp</item>
+		<item name="android:gravity">right</item> 
+	</style>
+
+	<style name="elem_values" parent="@android:style/TextAppearance"> <!-- used to be TextAppearance.Holo.Widget, which is appparently only in API level 13 !-->
+		<item name="android:textSize">22dp</item>
+		<item name="android:layout_gravity">center_vertical</item> 
+		<item name="android:layout_width">90dp</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+
+	<dimen name="bar_elem_label_max_width">120dp</dimen>
+	<dimen name="spinner_elem_label_max_width">210dp</dimen>
+	<dimen name="small_margin">10dp</dimen>
+	<dimen name="big_margin">20dp</dimen>
+	<dimen name="very_big_margin">40dp</dimen>
+
+	<dimen name="camera_view_width">800px</dimen>
+	<dimen name="camera_view_height">600px</dimen>
+	<dimen name="camera_histogram_width">256px</dimen>
+	<dimen name="camera_histogram_height">200dp</dimen>
+	
+	<dimen name="gallery_stack_thumbnail_width">266px</dimen>
+	<dimen name="gallery_stack_thumbnail_height">200px</dimen>
+	<dimen name="gallery_image_thumbnail_width">384px</dimen>
+	<dimen name="gallery_image_thumbnail_height">288px</dimen>
+	<dimen name="gallery_info_page_width">400px</dimen>
+	<dimen name="gallery_histogram_width">360dp</dimen>
+	<dimen name="gallery_histogram_height">240dp</dimen>
+	
+	<style name="theme_light" parent="@android:style/Theme.Holo.Light">
+		<item name="android:windowActionBarOverlay">true</item>
+	</style>
+
+	<style name="theme_dark" parent="@android:style/Theme.Holo">
+		<item name="android:windowActionBarOverlay">true</item>
+	</style>
+</resources>

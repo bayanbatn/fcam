@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+
+	<LinearLayout android:id="@+id/gallery_preview"
+		android:orientation="horizontal" android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<RelativeLayout android:layout_width="@dimen/gallery_info_page_width"
+			android:layout_height="match_parent" android:layout_marginLeft="@dimen/big_margin"
+			android:layout_marginBottom="@dimen/very_big_margin"
+			android:layout_marginTop="@dimen/big_margin">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_height="match_parent" android:layout_width="match_parent"
+				android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+				<TextView android:layout_height="match_parent"
+					android:id="@+id/tv_gallery_info_label" style="@style/elem_labels" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="match_parent" android:id="@+id/tv_gallery_info_value"
+					style="@style/elem_values" />
+			</LinearLayout>
+
+			<com.nvidia.fcamerapro.HistogramView
+				android:layout_alignParentBottom="true" android:id="@+id/gallery_histogram"
+				android:layout_width="@dimen/gallery_histogram_width"
+				android:layout_height="@dimen/gallery_histogram_height" />
+		</RelativeLayout>
+
+		<LinearLayout android:orientation="vertical"
+			android:layout_height="match_parent" android:layout_width="match_parent">
+
+			<LinearLayout android:layout_height="match_parent"
+				android:layout_width="match_parent" android:layout_weight="0.5">
+				<Gallery android:id="@+id/stack_gallery"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:layout_gravity="center" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_height="match_parent"
+				android:layout_width="match_parent" android:layout_weight="0.5">
+				<Gallery android:id="@+id/image_gallery"
+					android:layout_width="match_parent" android:layout_height="wrap_content"
+					android:layout_gravity="center" />
+			</LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+
+	<WebView android:id="@+id/gallery_large_preview"
+		android:layout_height="match_parent" android:layout_width="match_parent"
+		android:visibility="invisible" />
+</FrameLayout>

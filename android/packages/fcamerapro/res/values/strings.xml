@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">FCameraPRO</string>
+
+	<string-array name="output_format_array">
+		<item>JPEG Image</item>
+		<item>RAW Image</item>
+		<item>RAW/JPEG Image Pair</item>
+	</string-array>
+	
+	<string-array name="flash_mode_array">
+		<item>Off</item>
+		<item>On</item>
+		<item>Flash/No-flash</item>
+	</string-array><string-array name="touch_action_array">
+		<item >Focus (Global)</item>
+	</string-array>
+	<string name="menu_mono_capture" >Mono Capture</string><string name="menu_viewer">Viewer</string>
+	<string name="menu_item_delete_stack">Delete Stack</string>
+	<string name="label_output_format">Output Format</string>
+	<string name="label_flash_mode">Flash Mode</string>
+	<string name="label_touch_action">Touch Action</string><string name="label_wb">WB</string>
+	<string name="label_exposure">Exposure</string>
+	<string name="label_gain">Gain</string>
+	<string name="label_focus">Focus</string>
+	<string name="label_capture">Capture</string>
+	<string name="label_auto">Auto</string>
+	
+	<string name="label_large_preview">Image Preview</string>
+	<string name="confirmation_delete_stack">Are you sure you want to delete \"%s\" stack?</string>
+	
+	<string name="label_info_page">Total Stacks\n</string>
+	<string name="label_info_stack">Stack Name\nImage Count\n</string>
+	<string name="label_info_image">Image Name\nExposure\nGain\nWB\nFlash\n</string>
+	
+	<string name="label_preview_hint">Long press images to enlarge...</string>
+	
+	
+	
+	
+</resources>

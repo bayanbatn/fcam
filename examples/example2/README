@@ -1,0 +1,10 @@
+NVIDIA FCAM - Example 2
+Capture and save a flash / no-flash pair. 
+Demonstrates the use of a Flash Action.
+
+Note: Flash support is limited to certain NVIDIA Tegra 3 devices.  If
+your device does not have a supported flash device, then the code will
+compile and run, but the flash will not fire.
+
+
+

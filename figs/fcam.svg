@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="374.4px" height="302.4px" viewBox="0 0 374.4 302.4" enable-background="new 0 0 374.4 302.4" xml:space="preserve">
+<path fill="#EBEBFF" stroke="#000000" d="M79.2,175.2c0,6.627-5.373,12-12,12h-48c-6.627,0-12-5.373-12-12v-48
+	c0-6.627,5.373-12,12-12h48c6.627,0,12,5.373,12,12V175.2z"/>
+<path fill="#EAFFDE" stroke="#000000" d="M223.2,67.2c0,6.627-5.373,12-12,12h-48c-6.627,0-12-5.373-12-12v-48
+	c0-6.627,5.373-12,12-12h48c6.627,0,12,5.373,12,12V67.2z"/>
+<path fill="#EBEBFF" stroke="#000000" d="M367.2,175.2c0,6.627-5.373,12-12,12h-48c-6.627,0-12-5.373-12-12v-48
+	c0-6.627,5.373-12,12-12h48c6.627,0,12,5.373,12,12V175.2z"/>
+<path fill="#EBEBFF" stroke="#000000" d="M223.2,283.2c0,6.627-5.373,12-12,12h-48c-6.627,0-12-5.373-12-12v-48
+	c0-6.627,5.373-12,12-12h48c6.627,0,12,5.373,12,12V283.2z"/>
+<path fill="#EBEBFF" stroke="#000000" d="M223.2,175.2c0,6.627-5.373,12-12,12h-48c-6.627,0-12-5.373-12-12v-48
+	c0-6.627,5.373-12,12-12h48c6.627,0,12,5.373,12,12V175.2z"/>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="3" d="M43.2,108c0-35.817,45.084-64.8,100.8-64.8"/>
+		<polygon points="140.95,49.297 139.134,47.482 143.414,43.2 139.134,38.92 140.95,37.104 147.047,43.2 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="3" d="M331.2,108c0-35.817-45.084-64.8-100.8-64.8"/>
+		<polygon points="325.104,104.95 326.918,103.134 331.2,107.414 335.48,103.134 337.297,104.95 331.2,111.047 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="3" d="M331.2,194.4c0,35.817-45.084,64.8-100.8,64.8"/>
+		<polygon points="233.45,253.104 235.267,254.918 230.986,259.2 235.267,263.48 233.45,265.297 227.354,259.2 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#000000" stroke-width="3" d="M43.2,194.4c0,35.817,45.084,64.8,100.8,64.8"/>
+		<polygon points="49.297,197.45 47.482,199.267 43.2,194.986 38.92,199.267 37.104,197.45 43.2,191.354 		"/>
+	</g>
+</g>
+<rect x="7.201" y="144" fill="none" width="72" height="14.4"/>
+<text transform="matrix(1 0 0 1 22.0117 153.9404)" font-family="'MyriadPro-Regular'" font-size="14">Frames</text>
+<rect x="295.2" y="144" fill="none" width="72" height="14.4"/>
+<text transform="matrix(1 0 0 1 314.9326 153.9404)" font-family="'MyriadPro-Regular'" font-size="14">Shots</text>
+<rect x="151.2" y="36" fill="none" width="72" height="14.4"/>
+<text transform="matrix(1 0 0 1 157.5059 45.9399)" font-family="'MyriadPro-Regular'" font-size="14">Your code</text>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="3" x1="230.4" y1="151.2" x2="288" y2="151.2"/>
+		<polygon points="284.95,157.297 283.134,155.481 287.414,151.2 283.134,146.92 284.95,145.104 291.047,151.2 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="3" x1="144" y1="151.2" x2="86.4" y2="151.2"/>
+		<polygon points="89.45,145.104 91.267,146.918 86.986,151.2 91.267,155.48 89.45,157.297 83.354,151.2 		"/>
+	</g>
+</g>
+<rect x="158.4" y="252" fill="none" width="57.6" height="14.4"/>
+<text transform="matrix(1 0 0 1 167.4536 261.9395)" font-family="'MyriadPro-Regular'" font-size="14">Sensor</text>
+<rect x="158.4" y="144" fill="none" width="57.6" height="14.4"/>
+<text transform="matrix(1 0 0 1 164.6118 153.9395)" font-family="'MyriadPro-Regular'" font-size="14">Devices</text>
+<rect x="230.4" y="136.8" fill="none" width="57.6" height="14.4"/>
+<text transform="matrix(1 0 0 1 237.3252 146.7402)" font-family="'MyriadPro-Regular'" font-size="14">Actions</text>
+<rect x="86.401" y="136.8" fill="none" width="57.599" height="14.4"/>
+<text transform="matrix(1 0 0 1 101.6626 146.7402)" font-family="'MyriadPro-Regular'" font-size="14">Tags</text>
+</svg>

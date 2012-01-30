@@ -1,0 +1,52 @@
+= Prerequisites:
+
+= Building from Tegra Android Development Kit =
+
+1. Create a new project in Eclipse from an existing source
+   a. Click 'File' -> 'New Android Project'...
+   b. Select the 'Create project from existing source' option
+   c. Select API level 11
+   d. In the Location field, click Browse... and select <fcam-root>/examples/example6 directory
+   e. Name the project to Example6
+   f. Click Finish
+
+2. Convert Android project into mixed Java/C++ project
+   a. Switch to 'C/C++' perspective (Window -> Open Perspective -> Other ...)
+   b. In the 'Project Explorer' (left window), right click on the project folder and select 'New' -> 'Convert to a C/C++ Project' option
+   c. Select 'Makefile project' as a project type and '-- Other Toolchain --' as a toolchain
+   d. Click Finish
+
+3. Setup C++ build properties
+   a. In the 'Project Explorer', right click on the project folder and select 'Properties'
+   b. In 'C/C++ Build' -> 'Environment', add NDK_MODULE_PATH variable with an absolute location of directory where <fcam-root> is located
+ 
+      Example: if <fcam-root>=/data/projects/fcam then NDK_MODULE_PATH=/data/projects
+ 
+      Note: for Windows builds, the path should be stored in cygwin format. For example, /cygdrive/c/Projects instead of C:\Projects
+ 
+   c. In Properties -> C/C++ Build -> Builder Settings tab, unselect 'Use default build command' option. 
+      In 'Build command' field, write "bash ${NDKROOT}/ndk-build NDK_DEBUG=1". 
+      The 'Build directory' location should be set to ${workspace_loc:/<project-name>/jni}, 
+      where <project-name> is the name of the project in Eclipse workspace.
+ 
+      NDK_DEBUG is a boolean variable (0/1) that determines whether the project should be built in debug or release mode.
+ 
+      Optionally, you might consider adding "V=1" option for verbose compilation output or 
+      "-j <n>" to speed up the compilation on multi-core machines (<n> denotes the number of CPU cores).
+  
+4. Build the application as you would build a normal Android application.
+         RClick project -> Build Project
+   From Eclipse, run the application to build Java/C++ code and install on the device.
+         RClick project -> Run As -> Android Application
+   The output image should be at /data/fcam/example6.jpg
+   Get it from the command line to your computer for checking it's OK:
+         adb pull /data/fcam/example6.jpg
+
+5. Setup Eclipse search paths (optional)
+   RClick project -> Properties -> C/C++ General -> Paths and Symbols -> Includes -> GNU C++
+   Add three directories:
+       <fcam-root>/include
+       <NVPACK-root>/android--ndk-r6b/platforms/android-9/arch-arm/usr/include
+       <NVPACK-root>/android-ndk-r6b/sources/cxx-stl/stlport/stlport
+   Eclipse should ask whether you want to reindex the project, answer yes.
+   Now Eclipse supports better following up from the editor window to include files, function definitions, etc.
